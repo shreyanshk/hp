@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, redirect, url_for
 import sqlite3
 
 view = Blueprint('WelcomePageView',
@@ -8,4 +8,4 @@ view = Blueprint('WelcomePageView',
 
 @view.route("/")
 def whoami():
-    return render_template("WelcomePage.html")
+    return redirect(url_for("ReviewPageView.review"))

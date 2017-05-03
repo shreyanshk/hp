@@ -1,1 +1,243 @@
-this is a test page.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lost and Found</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="/static/vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="/static/build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Lost and Found</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="/static/images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Supragya Raj</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>15BCE1312 - BTech 2nd year</h3>
+                <br><br><br><br><br><br>
+                <ul class="nav side-menu">
+                  <li><a href="/review"><i class="fa fa-home"></i> FOUND ITEMS</a>
+                  </li>
+                  <li><a href="/report"><i class="fa fa-edit"></i> REPORT FINDINGS </a>
+                  </li>
+                  <li><a href="/self"><i class="fa fa-edit"></i> MY CONTENT </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            <!-- /sidebar menu -->
+
+
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <div class="user-profile dropdown-toggle"><br>
+                    VELLORE INSTITUTE OF TECHNOLOGY, CHENNAI CAMPUS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <br>&nbsp
+                  </div>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+
+              <div class="row tile_count">
+            <div class="col-md-12 col-sm-12 col-xs-12 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> This page provides</span>
+              <div class="count">Found something?</div>
+              <span class="count_bottom">You found someone's belongings? Report it here. Man, that guy is in trouble. Ease him up, be quick. And a reminder: Please do not spam!</span>
+            </div>
+
+          </div>
+            </div>
+            <div class="clearfix"></div>
+            <br><br>
+            <div class="row">
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_content">
+                    <!-- Tabs -->
+                    <div id="wizard_verticle" class="form_wizard wizard_verticle">
+                      <ul class="list-unstyled wizard_steps">
+                        <li>
+                          <a href="#step-11">
+                            <span class="step_no">1</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-22">
+                            <span class="step_no">2</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-33">
+                            <span class="step_no">3</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-44">
+                            <span class="step_no">4</span>
+                          </a>
+                        </li>
+                      </ul>
+
+                      <div id="step-11">
+                        <h2 class="StepTitle">Step 1: What have you found?</h2>
+                        <form class="form-horizontal form-label-left">
+
+                          <span class="section">Basic item information</span>
+                          <br><br>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3" for="first-name">Item name <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6">
+                              <input type="text" id="obj" name="obj" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3" for="last-name">Second heading information about item <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6">
+                              <input type="text" id="objdescsrt" name="objdescsrt" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3" for="last-name">Where did you find it? <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6">
+                              <input type="text" id="location" name="location" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+
+
+                        </form>
+                      </div>
+                      <div id="step-22">
+                        <h2 class="StepTitle">Step 2: Add some detailed information</h2>
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6">
+                              <textarea type="text" id="objdesclng" name="objdesclng" required="required" class="form-control col-md-7 col-xs-12" height="20"></textarea>
+                            </div>
+                        </div>
+                        <br><br><br>
+                      </div>
+                      <div id="step-33">
+                        <h2 class="StepTitle">Step 3: Add a picture</h2>
+                        <div class="x_content">
+                          <p>Drag multiple files to the box below for multi upload or click to select files. This is for demonstration purposes only, the files are not uploaded to any server.</p>
+                        <!-- <form action="form_upload.html" class="dropzone"></form>
+                          <br />
+                          <br />
+                          <br />
+                          <br />
+                        </div> -->
+                      </div>
+                      <div id="step-44">
+                        <h2 class="StepTitle">Step 4: Anti Spam Warning</h2>
+                        <p>Kindly do not spam this community effort. Keep it clean. By posting here, you comply to the given set of rules put forth by the authorities to keep a check over spammer. Be friendly and at all time know.. you are monitored.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- End SmartWizard Content -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Lost and Found service module connected to FFCS Vellore Institute of Technology, Chennai Campus. System admin at <b>lfsysadmin@vitchennai.ac.in</b>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/static/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/static/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/static/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/static/vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="/static/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="/static/build/js/custom.min.js"></script>
+
+
+  </body>
+</html>
