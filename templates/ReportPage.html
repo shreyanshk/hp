@@ -149,7 +149,7 @@
 
                       <div id="step-11">
                         <h2 class="StepTitle">Step 1: What have you found?</h2>
-                        <form class="form-horizontal form-label-left">
+                        <form class="form-horizontal form-label-left" method="post" enctype="multipart/form-data" action="report">
 
                           <span class="section">Basic item information</span>
                           <br><br>
@@ -186,13 +186,21 @@
                               <textarea type="text" id="objdesclng" name="objdesclng" required="required" class="form-control col-md-7 col-xs-12" height="20"></textarea>
                             </div>
                         </div>
+
+
                         <br><br><br>
                       </div>
                       <div id="step-33">
                         <h2 class="StepTitle">Step 3: Add a picture</h2>
                         <div class="x_content">
                           <p>Drag multiple files to the box below for multi upload or click to select files. This is for demonstration purposes only, the files are not uploaded to any server.</p>
-                        <!-- <form action="form_upload.html" class="dropzone"></form>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3" for="last-name">Image upload:<span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6">
+                              <input type="file" id="image" name="image" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div><!-- <form action="form_upload.html" class="dropzone"></form>
                           <br />
                           <br />
                           <br />
@@ -200,9 +208,21 @@
                         </div> -->
                       </div>
                       <div id="step-44">
-                        <h2 class="StepTitle">Step 4: Anti Spam Warning</h2>
-                        <p>Kindly do not spam this community effort. Keep it clean. By posting here, you comply to the given set of rules put forth by the authorities to keep a check over spammer. Be friendly and at all time know.. you are monitored.
-                        </p>
+                        <h2 class="StepTitle">Step 3: Add a picture</h2>
+                        <div class="x_content">
+                          <p>Drag multiple files to the box below for multi upload or click to select files. This is for demonstration purposes only, the files are not uploaded to any server.</p>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3" for="last-name">Submit it:<span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6">
+                              <input type="submit">Submit </input>
+                            </div>
+                          </div><!-- <form action="form_upload.html" class="dropzone"></form>
+                          <br />
+                          <br />
+                          <br />
+                          <br />
+                        </div> -->
                       </div>
                     </div>
                     <!-- End SmartWizard Content -->

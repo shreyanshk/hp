@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template
-import sqlite3
+from Project import dbctx
+from dbModels import Item
 
 view = Blueprint('SelfPageView',
         __name__,
