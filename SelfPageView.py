@@ -1,6 +1,4 @@
 from flask import Blueprint, render_template
-from Project import dbctx
-from dbModels import Item
 
 view = Blueprint('SelfPageView',
         __name__,
@@ -9,23 +7,6 @@ view = Blueprint('SelfPageView',
 
 @view.route("/self")
 def whoami():
-    posts = [
-        {
-            'obj' : "this is a test obj",
-            'date' : "1/1/2016",
-            'objdescsrt' : "this is a short desc",
-            'location' : "mba ampli",
-            'objdesclng' : "this is a long desc",
-            'picname' : "picture.jpg"
-        },
-        {
-            'obj' : "this is a test obj1",
-            'date' : "1/1/20161",
-            'objdescsrt' : "this is a short1 desc",
-            'location' : "mba ampli1",
-            'objdesclng' : "this is 1a long desc",
-            'picname' : "picture.jpg"
-
-        }
-    ]
-    return render_template("SelfPage.html", posts=posts)
+    from dbModels import Item
+    items = Item.query.all()
+    return render_template("SelfPage.html", posts = items)

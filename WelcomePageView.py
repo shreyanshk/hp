@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, redirect, url_for
-from Project import dbctx
 
 view = Blueprint('WelcomePageView',
         __name__,
