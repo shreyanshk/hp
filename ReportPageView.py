@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request
+from dbModels import dbctx, Item
 import os
 
 view = Blueprint('ReportPageView',
@@ -14,8 +15,6 @@ def allowed_file(filename):
 
 @view.route("/report", methods = ["GET", "POST"])
 def report():
-    from Project import dbctx
-    from dbModels import Item
     if request.method == "GET":
         return render_template("ReportPage.html")
     elif request.method == "POST":

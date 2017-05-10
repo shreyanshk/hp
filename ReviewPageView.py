@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template
+from dbModels import Item
 
 view = Blueprint('ReviewPageView',
         __name__,
@@ -7,8 +8,6 @@ view = Blueprint('ReviewPageView',
 
 @view.route("/review")
 def review():
-    from Project import dbctx
-    from dbModels import Item
     items = Item.query.all()
     return render_template("ReviewPage.html",
         posts = items

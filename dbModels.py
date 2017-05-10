@@ -1,4 +1,6 @@
-from Project import dbctx
+from flask_sqlalchemy import SQLAlchemy
+
+dbctx = SQLAlchemy()
 
 class Item(dbctx.Model):
     __tablename__ = 'Items'
@@ -22,5 +24,3 @@ class Item(dbctx.Model):
         return "Item:\t{0}\nShortDesc:\n{1}\nLongDesc:\n{2}\nLocation:\t{3}\n".format(
             self.obj, self.objdescsrt, self.objdesclng, self.location,
             )
-
-dbctx.create_all()
